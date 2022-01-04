@@ -1,0 +1,33 @@
+Index: src/main/java/com/teambeta/bloodbank/User.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/teambeta/bloodbank/User.java b/src/main/java/com/teambeta/bloodbank/User.java
+new file mode 100644
+--- /dev/null	(date 1632947438333)
++++ b/src/main/java/com/teambeta/bloodbank/User.java	(date 1632947438333)
+@@ -0,0 +1,23 @@
++package com.teambeta.bloodbank;
++
++public abstract class User {
++
++    private int id;
++    private String nic;
++    private String fullName;
++    private String gender;
++    private String bloodGroup;
++    private String dateOfBirth;
++    private String phone;
++    private String date;
++    private String city;
++    private boolean status;
++    private int noOfBloodPackets;
++
++    public abstract void setUserDetails(String nic, String fullName, String gender, String bloodGroup, String dateOfBirth, String phone, String city);
++
++    public abstract  void editUserDetails();
++
++    public abstract  void deleteUserDetails();
++
++}

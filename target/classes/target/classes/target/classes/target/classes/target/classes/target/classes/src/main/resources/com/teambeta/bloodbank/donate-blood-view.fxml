@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.teambeta.bloodbank.DonateBloodController">
+    <children>
+        <Pane prefHeight="98.0" prefWidth="630.0" style="-fx-background-color: #eb4034;">
+            <children>
+                <Label layoutX="23.0" layoutY="25.0" prefHeight="53.0" prefWidth="405.0" text="Donate Blood" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="38.0" />
+                    </font></Label>
+            </children>
+        </Pane>
+        <Pane layoutY="98.0" prefHeight="365.0" prefWidth="630.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Label layoutX="48.0" layoutY="96.0" text="Name" textFill="#d40f0f">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Label layoutX="47.0" layoutY="167.0" text="Blood Group" textFill="#d40f0f">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Label layoutX="48.0" layoutY="235.0" text="Health issues" textFill="#d40f0f">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Label layoutX="48.0" layoutY="295.0" text="Have donated blood before?" textFill="#d40f0f">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtSearchIDDonate" layoutX="88.0" layoutY="20.0" prefHeight="40.0" prefWidth="350.0">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="btnSearchDonate" layoutX="467.0" layoutY="21.0" mnemonicParsing="false" onAction="#searchDonor" prefHeight="40.0" text="search" textFill="#d40f0f">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Label layoutX="133.0" layoutY="63.0" text="(search the donor by the NIC No.)" textFill="#d40f0f">
+                    <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                    </font>
+                </Label>
+                <RadioButton fx:id="rdoYesDonate" layoutX="431.0" layoutY="301.0" mnemonicParsing="false" text="Yes" textFill="#d40f0f">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton fx:id="rdoNoDonate" layoutX="525.0" layoutY="301.0" mnemonicParsing="false" text="No" textFill="#d40f0f">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgDonated" />
+               </toggleGroup>
+                </RadioButton>
+                <TextField fx:id="txtNameDonate" editable="false" layoutX="232.0" layoutY="96.0" prefHeight="30.0" prefWidth="350.0">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtGroupDonate" editable="false" layoutX="233.0" layoutY="166.0" prefHeight="30.0" prefWidth="350.0">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </TextField>
+            <TextField fx:id="txtHealthIssues" editable="false" layoutX="234.0" layoutY="235.0" prefHeight="30.0" prefWidth="350.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            </children>
+        </Pane>
+        <Pane layoutY="463.0" prefHeight="83.0" prefWidth="630.0" style="-fx-background-color: #d40f0f;">
+            <children>
+                <Button fx:id="btnApply" layoutX="98.0" layoutY="23.0" mnemonicParsing="false" onAction="#donate" prefHeight="40.0" prefWidth="109.0" text="Donate" textFill="#d40f0f">
+                    <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnCancelApply" layoutX="433.0" layoutY="25.0" mnemonicParsing="false" onAction="#cancelDonate" prefHeight="34.0" prefWidth="109.0" text="Cancel" textFill="#d40f0f">
+                    <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

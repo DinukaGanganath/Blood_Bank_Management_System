@@ -1,0 +1,17 @@
+Index: src/main/java/com/teambeta/bloodbank/ApplyBloodView.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.teambeta.bloodbank;\r\n\r\nimport javafx.application.Application;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Scene;\r\nimport javafx.stage.Stage;\r\n\r\npublic class ApplyBloodView extends Application {\r\n\r\n    @Override\r\n    public void start(Stage stage) throws Exception {\r\n        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource(\"apply-blood-view.fxml\"));\r\n\r\n        Scene scene = new Scene(fxmlLoader.load(), 623, 713);\r\n        stage.setTitle(\"Apply Blood\");\r\n        stage.setScene(scene);\r\n        stage.setResizable(false);\r\n        // stage.setFullScreen(true);\r\n        stage.show();\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/com/teambeta/bloodbank/ApplyBloodView.java b/src/main/java/com/teambeta/bloodbank/ApplyBloodView.java
+--- a/src/main/java/com/teambeta/bloodbank/ApplyBloodView.java	
++++ b/src/main/java/com/teambeta/bloodbank/ApplyBloodView.java	
+@@ -18,4 +18,8 @@
+         // stage.setFullScreen(true);
+         stage.show();
+     }
++
++    
++
++
+ }
